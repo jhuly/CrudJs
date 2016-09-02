@@ -17,3 +17,5 @@
 /* add padding  */
 .left-addon input  { padding-left:  20px; }
 .right-addon input { padding-right: 20px; }
+
+body { padding-top: 70px; }
