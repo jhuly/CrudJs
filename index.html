@@ -5,37 +5,51 @@
         <title>CRUD JavaScript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS de Bootstrap -->
-        <link rel="stylesheet" type="" href="bootstrap\css\bootstrap.css">
+        <title>CRUD en JavaScript</title>
+       
+        <link rel="stylesheet" type="" href="bootstrap\css\bootstrap.css">  <!-- CSS de Bootstrap -->
+        <link rel="stylesheet" type="" href="bootstrap\css\style.css"> <!-- CSS para los iconos -->
+        <link rel="stylesheet" href="fonts/css/font-awesome.min.css"> <!-- CSS de FontAwesome -->
+
     </head>
 
     <body>
         <div class="container">
-            <form role="form" action="" class="" id="formulario" name="">
-                <div class="form-group">
+            <div class="page-header">
+                <h1><small>CRUD en JavaScript</small></h1>
+            </div>
+            <form role="form" action="" class="" id="formulario" name="formulario">
+                <div class="form-group inner-addon left-addon">
                     <label>Nombres:</label>
-                    <input type="text" class="form-control" name=" " id="nombre" placeholder="Introduzca sus Nombres">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="form-control" name=" " id="nombre" placeholder="Introduzca sus Nombres" required pattern="[a-zA-Z]*">
                 </div>
-                <div class="form-group">
+                <div class="form-group inner-addon left-addon">
                     <label>Apellidos:</label>
-                    <input type="text" class="form-control" name=" " id="apellido" placeholder="Introduzca sus Apellidos">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="form-control" name=" " id="apellido" placeholder="Introduzca sus Apellidos" required/>
                 </div>
-                <div class="form-group">
+                <div class="form-group inner-addon left-addon">
                     <label>Cédula</label>
-                    <input type="text" class="form-control" name=" " id="cedula" placeholder="Introduzca su Cédula">
+                    <i class="fa fa-wpforms"></i>
+                    <input type="text" class="form-control" name=" " id="cedula" placeholder="Introduzca su Cédula" required/ >
                 </div>
-                <div class="form-group">
+                <div class="form-group inner-addon left-addon">
                     <label>Email</label>
-                    <input type="email" class="form-control" name=" " id="email" placeholder="Introduzca su Email">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" class="form-control" name=" " id="email" placeholder="Introduzca su Email" required/>
                 </div>
-                <div class="form-group">
+                <div class="form-group inner-addon left-addon">
                     <label>Teléfono</label>
-                    <input type="tel" class="form-control" name=" " id="telefono" placeholder="Introduzca su número de teléfono">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" class="form-control" name=" " id="telefono" max="9" placeholder="Introduzca su número de teléfono" required/>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
             <script src="http://code.jquery.com/jquery.js "></script>
             <script> src="bootstrap/js/bootstrap.min.js "</script>
+            <script> src="js/validaciones.js "</script>
+
     </body>
  </html>

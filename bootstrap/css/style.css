@@ -1,0 +1,19 @@
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 35px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa { left:  -30px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  20px; }
+.right-addon input { padding-right: 20px; }
