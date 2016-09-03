@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <title>CRUD JavaScript</title>
         <meta charset="UTF-8">
@@ -10,15 +9,20 @@
         <link rel="stylesheet" type="" href="bootstrap\css\bootstrap.css">  <!-- CSS de Bootstrap -->
         <link rel="stylesheet" type="" href="bootstrap\css\style.css"> <!-- CSS para los iconos -->
         <link rel="stylesheet" href="fonts/css/font-awesome.min.css"> <!-- CSS de FontAwesome -->
-
     </head>
-
     <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-th-list"></i> CRUD en JavaScript</a>
+                </div>
+            </div>
+        </nav>
         <div class="container">
             <div class="page-header">
-                <h1><small>CRUD en JavaScript</small></h1>
+                <h1><i class="fa fa-html5" aria-hidden="true"></i> <small>Complete el Fomulario</small></h1>
             </div>
-            <form role="form" action="" class="" id="formulario" name="formulario">
+            <form role="form" action="POST" class="" id="formulario" name="formulario">
                 <div class="form-group inner-addon left-addon">
                     <label>Nombres:</label>
                     <i class="fa fa-user"></i>
@@ -47,7 +51,7 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
-            <script src="http://code.jquery.com/jquery.js "></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
             <script> src="bootstrap/js/bootstrap.min.js "</script>
             <script> src="js/validaciones.js "</script>
 
